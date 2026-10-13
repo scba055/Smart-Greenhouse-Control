@@ -1,0 +1,29 @@
+Virtual Environment = "activate-google"
+Git push = "gitpush"
+Git pull = "gitpull"
+history
+python3 main.py
+
+
+
+
+
+- sudo apt update
+- sudo apt install rclone
+- rclone config
+No remotes found - make a new one
+n) New remote
+s) Set configuration password
+q) Quit config
+- N
+name>  - gdrive
+Type of storage to configure.
+Choose a number from below, or type in your own value
+(Google Drive)
+- 18 
+Use auto config?
+- Y
+Configure as a team drive?
+- N
+- rclone lsd gdrive:
+

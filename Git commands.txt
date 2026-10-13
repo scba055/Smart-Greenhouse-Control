@@ -1,0 +1,2 @@
+alias gitpull='cd /home/pi/photo_project && git pull origin main'
+alias gitpush='cd /home/pi/GreenhouseRPI && git add . && read -p "Commit message: " msg && git commit -m "$msg" && git push origin main'

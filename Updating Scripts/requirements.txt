@@ -1,0 +1,56 @@
+# Image processing
+Pillow>=10.0.0
+
+# Google APIs (Sheets only now)
+google-api-python-client>=2.170.0
+google-auth>=2.40.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+
+# Discord integration
+discord.py>=2.3.0
+
+# Additional dependencies
+cachetools>=5.5.0
+certifi>=2025.6.0
+charset-normalizer>=3.4.0
+google-api-core>=2.25.0
+googleapis-common-protos>=1.70.0
+httplib2>=0.22.0
+idna>=3.10
+numpy>=1.24.0
+oauthlib>=3.3.0
+proto-plus>=1.26.0
+protobuf>=4.21.0
+pyasn1>=0.6.0
+pyasn1-modules>=0.4.0
+pyparsing>=3.2.0
+python-dateutil>=2.9.0
+pytz>=2025.1
+requests>=2.32.0
+requests-oauthlib>=2.0.0
+rsa>=4.9.0
+six>=1.17.0
+uritemplate>=4.2.0
+urllib3>=2.5.0
+pyserial>=3.5
+
+# Discord.py dependencies (usually installed automatically)
+aiohttp>=3.8.0
+yarl>=1.8.0
+multidict>=6.0.0
+async-timeout>=4.0.0
+
+# Note: rpicam-apps is not a Python package - install separately:
+# sudo apt update && sudo apt install rpicam-apps
+
+# Note: rclone is not a Python package - install separately:
+# curl https://rclone.org/install.sh | sudo bash
+# or download from https://rclone.org/downloads/
+
+# Optional: For Raspberry Pi hardware (uncomment if needed)
+# adafruit-blinka
+# adafruit-circuitpython-scd30
+
+# Optional: For data analysis (uncomment if needed)
+# pandas>=2.0.0

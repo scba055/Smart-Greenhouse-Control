@@ -1,0 +1,29 @@
+import time
+
+# Serial device is your SAMD21 connected via USB
+device = "/dev/ttyACM0"
+
+# Open the device in binary mode
+with open(device, "rb", buffering=0) as ser:
+    print("Waiting for data from SAMD21...")
+    try:
+        while True:
+            # Read one line (SAMD21 prints newline-terminated strings)
+            line = b""
+            while True:
+                byte = ser.read(1)
+                if not byte:
+                    break
+                if byte == b'\n':
+                    break
+                line += byte
+
+            if line:
+                # Decode bytes to string and strip whitespace
+                text = line.decode('utf-8', errors='ignore').strip()
+                print(text)
+
+            time.sleep(0.1)
+
+    except KeyboardInterrupt:
+        print("Exiting...")
